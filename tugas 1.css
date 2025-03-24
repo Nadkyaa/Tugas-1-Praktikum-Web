@@ -1,0 +1,570 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #020066, #008080);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a.active {
+    font-weight: bold;
+    color: #ffcc00; /* Warna berbeda untuk tab aktif */
+    border-bottom: 2px solid #ffcc00; /* Garis bawah sebagai tanda */
+}
+
+
+.btn {
+    background: #00e0c6;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #00b8a3;
+}
+
+/* Intro Section */
+.intro {
+    padding: 80px 50px;
+    max-width: 600px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00e0c6;
+}
+
+.intro p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: white;
+    color: black;
+}
+
+
+.what-we-do {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 22px;
+    color: #888;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #888;
+    margin: 10px auto;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.service {
+    max-width: 300px;
+    text-align: center;
+}
+
+.service img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.learn-more {
+    color: blue;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.intro, .what-we-do, .how-we-work, .meet-our-team {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.how-we-work {
+    background-color: #020066;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    color: #888;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #888;
+    margin: 10px auto;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: cyan;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.pricing-plan {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pricing-plan hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+
+.pricing-plan h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.pricing-plan h3 span {
+    font-size: 16px;
+    color: #666;
+}
+
+.pricing-plan p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact-btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact-btn:hover {
+    background: #333;
+}
+
+.meet-our-team {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.meet-our-team h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #777;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.meet-our-team h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #ccc;
+    margin: 10px auto 0;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #6a4bbc;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.open-source-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.open-source-section h4 {
+    font-size: 18px;
+    color: #aaa;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.open-source-section hr {
+    width: 60px;
+    height: 2px;
+    background-color: #ccc;
+    border: none;
+    margin: 10px auto;
+}
+
+.icon-container img {
+    width: 150px;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
+.open-source-section h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #222;
+    line-height: 1.2;
+}
+
+.open-source-section h1 span {
+    display: inline-block;
+    border-bottom: 5px solid #222;
+    padding-bottom: 5px;
+}
+
+.footer {
+    background-color: #0a0a66; /* Warna biru gelap */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+/* 🔹 About Us Section */
+.about-us {
+    padding: 60px 15%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.about-content p, .about-content ul {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.about-content ul {
+    text-align: left;
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.about-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+}
+
+/* 🔹 Contact Us Section */
+.contact-us {
+    padding: 60px 15%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.contact-info {
+    width: 40%;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 8px 0;
+}
+
+.contact-form {
+    width: 50%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .btn {
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.contact-form .btn:hover {
+    background-color: #2980b9;
+}
+
+
